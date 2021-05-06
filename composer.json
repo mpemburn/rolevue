@@ -1,0 +1,33 @@
+{
+    "name": "mpemburn/rolevie",
+    "description": "Vue.js user interface for Spatie Permission package.",
+    "type": "library",
+    "keywords": ["ui","vue","laravel","rbac","spatie"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Pemburn",
+            "email": "mark@pemburn.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mpemburn\\RoleVue\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Mpemburn\\RoleVue\\RoleVueServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
