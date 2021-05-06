@@ -1,5 +1,5 @@
 {
-    "name": "mpemburn/rolevie",
+    "name": "mpemburn/rolevue",
     "description": "Vue.js user interface for Spatie Permission package.",
     "type": "library",
     "keywords": ["ui","vue","laravel","rbac","spatie"],
