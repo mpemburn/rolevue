@@ -1,7 +1,7 @@
 ## RoleVue
-[![Latest Version](https://img.shields.io/github/release/mpemburn/rolevue.svg?style=flat-square)](https://github.com/spatie/laravel-analytics/releases)
+[![Latest Version](https://img.shields.io/github/release/mpemburn/rolevue.svg?style=flat-square)](https://github.com/mpemburn/rolevue.git)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Total Downloads](https://img.shields.io/packagist/dt/mpemburn/rolevue.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-analytics)
+[![Total Downloads](https://img.shields.io/packagist/dt/mpemburn/rolevue.svg?style=flat-square)](https://packagist.org/packages/mpemburn/rolevue)
 
 ### About
 The `rolevue` package provides a Vue.js-based user interface for the Spatie Permission package.
