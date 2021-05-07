@@ -6,10 +6,6 @@ use Illuminate\Support\ServiceProvider;
 
 class RoleVueServiceProvider extends ServiceProvider
 {
-    public function register(): void
-    {
-    }
-
     public function boot(): void
     {
         $this->publishes([
@@ -22,6 +18,6 @@ class RoleVueServiceProvider extends ServiceProvider
                 $this->loadRoutesFrom(__DIR__ . '/../routes/api.php');
             });
 
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'rolevue');
     }
-
 }
