@@ -67,7 +67,7 @@ Vue.mixin({
     }
 });
 
-const app = new Vue({
+const rolevue = new Vue({
     el: '#app',
     components: {},
 });

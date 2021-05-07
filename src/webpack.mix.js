@@ -13,9 +13,9 @@ const mix = require('laravel-mix');
 
 mix.setPublicPath('public')
     .version()
-    .js('resources/js/app.js', 'public/js')
+    .js('resources/js/rolevue.js', 'public/js')
     .vue()
-    .postCss('resources/css/app.css', 'public/css', [
+    .postCss('resources/css/rolevue.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
         require('autoprefixer'),

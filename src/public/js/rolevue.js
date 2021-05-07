@@ -2870,10 +2870,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
+/***/ "./resources/js/rolevue.js":
+/*!*********************************!*\
+  !*** ./resources/js/rolevue.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2946,17 +2946,17 @@ vue_dist_vue__WEBPACK_IMPORTED_MODULE_2___default().mixin({
     }
   }
 });
-var app = new (vue_dist_vue__WEBPACK_IMPORTED_MODULE_2___default())({
+var rolevue = new (vue_dist_vue__WEBPACK_IMPORTED_MODULE_2___default())({
   el: '#app',
   components: {}
 });
 
 /***/ }),
 
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
+/***/ "./resources/css/rolevue.css":
+/*!***********************************!*\
+  !*** ./resources/css/rolevue.css ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -29362,8 +29362,8 @@ Vue.compile = compileToFunctions;
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js/app": 0,
-/******/ 			"css/app": 0
+/******/ 			"/js/rolevue": 0,
+/******/ 			"css/rolevue": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -29411,8 +29411,8 @@ Vue.compile = compileToFunctions;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/rolevue"], () => (__webpack_require__("./resources/js/rolevue.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/rolevue"], () => (__webpack_require__("./resources/css/rolevue.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
