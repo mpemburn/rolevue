@@ -1,0 +1,29 @@
+div.table-wrapper {
+    width: 80%;
+    margin: 2rem auto;
+    border: 1px solid lightgray
+}
+
+div.dataTables_length {
+    margin: 1rem;
+}
+
+div.dataTables_length select {
+    width: 6rem;
+}
+
+div.dataTables_filter {
+    margin: 1rem;
+}
+
+div.dataTables_info {
+    margin: 1rem;
+}
+
+div.dataTables_paginate {
+    margin: 1rem;
+}
+
+select.dt-custom {
+    width: 100px;
+}
