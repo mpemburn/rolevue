@@ -2,14 +2,15 @@
 
 namespace Mpemburn\RoleVue\Controllers;
 
-use App\Models\User;
-use App\Services\UserRolesService;
-use App\Services\ValidationService;
+use Mpemburn\RoleVue\Models\User;
+use Mpemburn\RoleVue\Services\UserRolesService;
+use Mpemburn\RoleVue\Services\ValidationService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
+use Illuminate\Routing\Controller;
 
 class UserRolesController extends Controller
 {

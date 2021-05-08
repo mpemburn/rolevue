@@ -2,11 +2,12 @@
 
 namespace Mpemburn\RoleVue\Controllers;
 
-use App\Models\PermissionUi;
-use App\Services\PermissionsCrudService;
+use Mpemburn\RoleVue\Models\PermissionUi;
+use Mpemburn\RoleVue\Services\PermissionsCrudService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Permission;
+use Illuminate\Routing\Controller;
 
 class PermissionsController extends Controller
 {

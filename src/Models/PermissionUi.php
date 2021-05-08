@@ -2,7 +2,7 @@
 
 namespace Mpemburn\RoleVue\Models;
 
-use App\Interfaces\UiInterface;
+use Mpemburn\RoleVue\Interfaces\UiInterface;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Permission\Models\Permission;
 
