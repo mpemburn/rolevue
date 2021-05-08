@@ -17,6 +17,7 @@ class RoleVueServiceProvider extends ServiceProvider
 
         $this->app['router']->namespace('Mpemburn\\RoleVue\\Controllers')
             ->middleware(['api'])
+            ->as('api.')
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
             });
