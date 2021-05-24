@@ -2,7 +2,7 @@
 
 namespace Mpemburn\RoleVue\Controllers;
 
-use Mpemburn\RoleVue\Models\User;
+use App\Models\User;
 use Mpemburn\RoleVue\Services\UserRolesService;
 use Mpemburn\RoleVue\Services\ValidationService;
 use Illuminate\Http\JsonResponse;
