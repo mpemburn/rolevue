@@ -215,6 +215,12 @@ export default {
             this.dataTable = $('#user-roles-table').DataTable({
                 pageLength: 100,
                 lengthMenu: [10, 25, 50, 75, 100],
+                columnDefs: [
+                    {
+                        orderable: false,
+                        targets: [1, 2]
+                    }
+                ]
             });
         },
         refreshTable() {

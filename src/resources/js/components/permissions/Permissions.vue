@@ -251,7 +251,14 @@ export default {
             return found;
         },
         initDataTable() {
-            this.dataTable = $('#permissions-table').DataTable({});
+            this.dataTable = $('#permissions-table').DataTable({
+                columnDefs: [
+                    {
+                        orderable: false,
+                        targets: [1, 2]
+                    }
+                ]
+            });
         },
         refreshTable() {
             if (this.dataTable !== undefined) {

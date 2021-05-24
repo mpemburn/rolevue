@@ -309,7 +309,14 @@ export default {
             return found;
         },
         initDataTable() {
-            this.dataTable = $('#roles-table').DataTable({});
+            this.dataTable = $('#roles-table').DataTable({
+                columnDefs: [
+                    {
+                        orderable: false,
+                        targets: [1, 2]
+                    }
+                ]
+            });
         },
         refreshTable() {
             if (this.dataTable !== undefined) {
