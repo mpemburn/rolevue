@@ -1,4 +1,4 @@
-@extends('rolevue::layouts.app')
+@extends('vendor.rolevue.layouts.app')
 @section('content')
     <section name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
