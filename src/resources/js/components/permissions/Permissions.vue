@@ -224,7 +224,7 @@ export default {
                         }
                     });
                     this.showModal = false;
-                    this.readRolesFromAPI();
+                    this.readPermissionsFromAPI();
                 }
             }).catch(error => {
                 this.showError(error);
