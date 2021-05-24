@@ -6,6 +6,7 @@ window.Vue = require('vue');
 
 Vue.use(VueAxios, axios);
 
+window.axios = require('axios');
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 let token = document.head.querySelector('meta[name="csrf-token"]');
 window.csrftoken = token.content;
@@ -16,6 +17,7 @@ if (token) {
         'X-Requested-With': 'XMLHttpRequest'
     };
 }
+
 import VueTailwindModal from "vue-tailwind-modal"
 Vue.component("VueTailwindModal", VueTailwindModal)
 
