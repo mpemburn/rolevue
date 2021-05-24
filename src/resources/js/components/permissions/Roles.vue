@@ -76,6 +76,7 @@
                                         <input
                                             type="checkbox"
                                             name="role_permissions"
+                                            style="border: 1px solid #c0c0c0; border-radius: 5px"
                                             v-model="permission.checked"
                                             :value="permission.id"
                                         >

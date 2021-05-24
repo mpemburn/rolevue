@@ -45,7 +45,7 @@
                         <div class="form-group font-bold">
                             <div>Permission Name:</div>
                             <input
-                                class="w-80"
+                                class="w-80 border-solid border-gray-500 rounded-sm"
                                 type="text"
                                 name="permission_name"
                                 v-model="permissionName"
