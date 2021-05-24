@@ -2,7 +2,7 @@
 
 namespace Mpemburn\RoleVue\Services;
 
-use App\Interfaces\UiInterface;
+use Mpemburn\RoleVue\Interfaces\UiInterface;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
