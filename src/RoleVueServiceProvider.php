@@ -11,14 +11,19 @@ class RoleVueServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/resources/views', 'rolevue');
-
         $this->publishes([
             // config file
-            __DIR__.'/../config/rolevue.php' => config_path('rolevue.php'),
-            // views
-            __DIR__ . '/resources/views' => base_path('resources/views/vendor/rolevue')
+            __DIR__.'/../config/rolevue.php' => config_path('rolevue.php')
         ], 'config');
+
+        $this->publishes([
+            // views
+            __DIR__ . '/resources/views' => base_path('resources/views/vendor/rolevue'),
+            // css
+            __DIR__ . '/public/css/rolevue.css' => base_path('public/vendor/rolevue/css/rolevue.css'),
+            // js
+            __DIR__ . '/public/js/rolevue.js' => base_path('public/vendor/rolevue/js/rolevue.js'),
+        ]);
 
         Route::middleware('api')
             ->prefix('api')
