@@ -1,6 +1,7 @@
 @extends('vendor.rolevue.layouts.app')
 @section('content')
-    <section name="header">
+    <section name="header" class="mt-4">
+        <h2 class="font-semibold text-xl text-center text-gray-800 leading-tight">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Permissions') }}
         </h2>
