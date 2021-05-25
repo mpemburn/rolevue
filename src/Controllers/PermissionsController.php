@@ -2,6 +2,7 @@
 
 namespace Mpemburn\RoleVue\Controllers;
 
+use Illuminate\Support\Facades\Config;
 use Mpemburn\RoleVue\Models\PermissionUi;
 use Mpemburn\RoleVue\Services\PermissionsCrudService;
 use Illuminate\Http\JsonResponse;
@@ -27,7 +28,7 @@ class PermissionsController extends Controller
 
     public function show(Request $request, int $permissionId): JsonResponse
     {
-        $permission = Permission::findById($permissionId, 'web');
+        $permission = Permission::findById($permissionId, Config::get('rolevue.default_guard_name'));
 
         return response()->json(['success' => true, 'permission' => $permission]);
     }

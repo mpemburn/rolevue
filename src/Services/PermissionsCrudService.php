@@ -58,7 +58,7 @@ class PermissionsCrudService
             $name = $request->get('name');
             try {
                 $model->name = $name;
-                $model->guard_name = 'web';
+                $model->guard_name = Config::get('rolevue.default_guard_name');
                 $model->save();
                 $modelId = $model->id;
             } catch (\Exception $e) {
@@ -90,7 +90,7 @@ class PermissionsCrudService
             try {
                 $model->update([
                     'name' => $request->get('name'),
-                    'guard_name' => 'web'
+                    'guard_name' => Config::get('rolevue.default_guard_name')
                 ]);
                 $model->save();
             } catch (\Exception $e) {

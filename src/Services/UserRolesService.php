@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Config;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 use Spatie\Permission\Exceptions\RoleDoesNotExist;
 use Spatie\Permission\Models\Permission;
@@ -89,7 +90,7 @@ class UserRolesService
             'role_name' => ['required']
         ])) {
             $roleName = $request->get('role_name');
-            $role = Role::findByName($roleName, 'web');
+            $role = Role::findByName($roleName, Config::get('rolevue.default_guard_name'));
 
             $permissions = $role->getAllPermissions()->map(static function (Permission $permission) {
                 return $permission->name;

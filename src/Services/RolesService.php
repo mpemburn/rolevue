@@ -5,6 +5,7 @@ namespace Mpemburn\RoleVue\Services;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Config;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
@@ -39,7 +40,7 @@ class RolesService
     {
         $permissions = collect();
         if ($roleName) {
-            $role = Role::findByName($roleName, 'web');
+            $role = Role::findByName($roleName, Config::get('rolevue.default_guard_name'));
             $permissions = $role->getAllPermissions()
                 ->map(static function (Permission $permission) {
                 return $permission->name;
