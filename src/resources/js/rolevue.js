@@ -70,6 +70,6 @@ Vue.mixin({
 });
 
 const rolevue = new Vue({
-    el: '#app',
+    el: '#rolevue',
     components: {},
 });

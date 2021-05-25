@@ -6,7 +6,7 @@
         </h2>
     </section>
     <div id="acl_wrapper" data-context="roles" class="table-wrapper">
-        <section id="app">
+        <section id="rolevue">
             <permissions-all></permissions-all>
         </section>
     </div>
