@@ -13,7 +13,7 @@ class RoleVueServiceProvider extends ServiceProvider
     {
         $this->publishes([
             // config file
-            __DIR__.'/../config/rolevue.php' => config_path('rolevue.php')
+            __DIR__.'/../config/rolevue.php' => config_path('rolevue.php'),
         ], 'config');
 
         $this->publishes([
@@ -24,6 +24,8 @@ class RoleVueServiceProvider extends ServiceProvider
             // js
             __DIR__ . '/public/js/rolevue.js' => base_path('public/vendor/rolevue/js/rolevue.js'),
         ]);
+
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         Route::middleware('api')
             ->prefix('api')
